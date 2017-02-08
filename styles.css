@@ -74,7 +74,7 @@ header {
 header .profile-image {
   margin-top: 50px;
   width: 150px;
-  height: 150px;
+  height: 200px;
   border-radius: 25%;
   border: 5px solid #ff7f50;
   transition: all .5s;
@@ -95,7 +95,7 @@ header .profile-image:hover {
   color: #7dd5cd;
 }
 .card {
-  margin: 20px;
+  margin: 20px 10px;
   padding: 20px 10px 40px;
   max-width: 500px;
   text-align: left;
@@ -165,6 +165,7 @@ footer ul {
 
 footer ul li {
   display: inline-block;
+  list-style-position: inside;
 }
 
 a.social {
@@ -198,8 +199,9 @@ a.social:hover {
   
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1600px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
